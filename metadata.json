@@ -1,0 +1,5 @@
+{
+  "name": "Prismforge",
+  "description": "An advanced AI-powered image editor using Gemini 2.5 Flash Image. Remove backgrounds, apply filters, and edit images using natural language prompts.",
+  "requestFramePermissions": []
+}
