@@ -1,3 +1,4 @@
+
 export interface ImageState {
   file: File | null;
   previewUrl: string | null;
@@ -22,12 +23,12 @@ export enum PresetPrompt {
   REMOVE_BG = "Remove the background from the image perfectly, leaving only the main subject. Keep high details.",
   BLUE_SCREEN = "Replace the entire background behind the main subject with a solid pure blue color (chroma key blue).",
   GREEN_SCREEN = "Replace the entire background behind the main subject with a solid pure green color (chroma key green).",
+  ENHANCE = "Significantly improve the image resolution, detail, and sharpness. Remove noise and blur while keeping the original composition and colors natural.",
   RETRO_FILTER = "Apply a vintage 1980s retro filter to the image with grain and color shift.",
-  CYBERPUNK = "Transform the image into a cyberpunk style with neon lights and dark tones.",
+  STUDIO_GHIBLI = "Transform this image into the style of a Studio Ghibli anime movie, with lush backgrounds, vibrant natural colors, and characteristic character designs.",
+  POKEMON = "Transform the subject into a Pokemon anime style character or scene, with bold outlines, cel shading, and bright primary colors.",
   SKETCH = "Convert this image into a detailed pencil sketch.",
   WATERCOLOR = "Convert this image into a soft, artistic watercolor painting.",
   PIXEL_ART = "Transform this image into 8-bit pixel art style.",
-  CLAYMATION = "Make the image look like a claymation stop-motion animation.",
-  NOIR = "Convert to black and white film noir style with high contrast and dramatic shadows.",
-  FANTASY = "Transform the image into a fantasy painting style with magical lighting."
+  CLAYMATION = "Make the image look like a claymation stop-motion animation."
 }

@@ -54,7 +54,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ imageState, onImag
   if (imageState.previewUrl) {
     if (isCropping) {
         return (
-            <div className="relative w-full h-full min-h-[300px] bg-white/50 rounded-2xl overflow-hidden border border-[#2b6f77]/20 shadow-sm">
+            <div className="relative w-full h-full min-h-[250px] bg-white/50 rounded-2xl overflow-hidden border border-[#2b6f77]/20 shadow-sm">
                 <ImageCropper 
                     imageSrc={imageState.previewUrl}
                     onConfirm={handleCropConfirm}
@@ -65,7 +65,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ imageState, onImag
     }
 
     return (
-      <div className="relative w-full h-full min-h-[300px] bg-white/50 rounded-2xl overflow-hidden border border-[#2b6f77]/20 group shadow-sm">
+      <div className="relative w-full h-full min-h-[250px] bg-white/50 rounded-2xl overflow-hidden border border-[#2b6f77]/20 group shadow-sm">
         <img 
           src={imageState.previewUrl} 
           alt="Original" 
@@ -99,7 +99,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ imageState, onImag
   }
 
   return (
-    <div className="w-full h-full min-h-[300px] flex flex-col relative">
+    <div className="w-full h-full min-h-[250px] flex flex-col relative">
       <label 
         htmlFor="image-upload" 
         className="flex-1 flex flex-col items-center justify-center w-full h-full border-2 border-dashed border-[#2b6f77]/20 rounded-2xl hover:border-[#e11584] hover:bg-white/40 transition-all cursor-pointer group bg-white/20"

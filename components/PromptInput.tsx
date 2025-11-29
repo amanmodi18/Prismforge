@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Eraser, Sparkles, Zap, Pencil, Palette, Grid3x3, Box, Film, Star, Monitor } from 'lucide-react';
+import { Eraser, Sparkles, Zap, Pencil, Palette, Grid3x3, Box, Monitor, Flower, Aperture } from 'lucide-react';
 import { PresetPrompt, AspectRatio } from '../types';
 
 interface PromptInputProps {
@@ -39,14 +40,14 @@ export const PromptInput: React.FC<PromptInputProps> = ({
     { label: 'Remove BG', icon: Eraser, value: PresetPrompt.REMOVE_BG },
     { label: 'Blue Screen', icon: Monitor, value: PresetPrompt.BLUE_SCREEN },
     { label: 'Green Screen', icon: Monitor, value: PresetPrompt.GREEN_SCREEN },
+    { label: 'Enhance Detail', icon: Aperture, value: PresetPrompt.ENHANCE },
+    { label: 'Studio Ghibli', icon: Flower, value: PresetPrompt.STUDIO_GHIBLI },
+    { label: 'Pokemon Anime', icon: Zap, value: PresetPrompt.POKEMON },
     { label: 'Retro', icon: Sparkles, value: PresetPrompt.RETRO_FILTER },
-    { label: 'Cyberpunk', icon: Zap, value: PresetPrompt.CYBERPUNK },
     { label: 'Sketch', icon: Pencil, value: PresetPrompt.SKETCH },
     { label: 'Watercolor', icon: Palette, value: PresetPrompt.WATERCOLOR },
     { label: 'Pixel Art', icon: Grid3x3, value: PresetPrompt.PIXEL_ART },
     { label: 'Claymation', icon: Box, value: PresetPrompt.CLAYMATION },
-    { label: 'Noir', icon: Film, value: PresetPrompt.NOIR },
-    { label: 'Fantasy', icon: Star, value: PresetPrompt.FANTASY },
   ];
 
   const ratios: AspectRatio[] = ["1:1", "3:4", "4:3", "9:16", "16:9"];

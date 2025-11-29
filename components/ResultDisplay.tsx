@@ -62,7 +62,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({
 
   if (loading) {
     return (
-      <div className="w-full h-full min-h-[300px] bg-white/50 rounded-2xl border border-[#2b6f77]/20 flex flex-col items-center justify-center p-8 relative shadow-sm">
+      <div className="w-full h-full min-h-[250px] bg-white/50 rounded-2xl border border-[#2b6f77]/20 flex flex-col items-center justify-center p-8 relative shadow-sm">
         <Controls />
         <div className="loader"></div>
         <p className="text-sm text-[#2b6f77] mt-8 text-center max-w-xs font-medium">
@@ -74,7 +74,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({
 
   if (error) {
     return (
-      <div className="w-full h-full min-h-[300px] bg-red-50 rounded-2xl border border-red-200 flex flex-col items-center justify-center p-8 relative shadow-sm">
+      <div className="w-full h-full min-h-[250px] bg-red-50 rounded-2xl border border-red-200 flex flex-col items-center justify-center p-8 relative shadow-sm">
         <Controls />
         <div className="p-3 bg-red-100 rounded-full mb-4">
           <AlertCircle className="w-8 h-8 text-red-500" />
@@ -89,7 +89,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({
 
   if (!imageUrl) {
     return (
-      <div className="w-full h-full min-h-[300px] bg-white/30 rounded-2xl border border-[#2b6f77]/20 flex flex-col items-center justify-center p-8 text-center relative">
+      <div className="w-full h-full min-h-[250px] bg-white/30 rounded-2xl border border-[#2b6f77]/20 flex flex-col items-center justify-center p-8 text-center relative">
         <Controls />
         <div className="w-16 h-16 rounded-2xl bg-white/50 mb-4 flex items-center justify-center rotate-3 shadow-sm">
           <div className="w-full h-full border-2 border-dashed border-[#2b6f77]/30 rounded-2xl opacity-50"></div>
@@ -103,7 +103,7 @@ export const ResultDisplay: React.FC<ResultDisplayProps> = ({
   }
 
   return (
-    <div className="relative w-full h-full min-h-[300px] bg-white/50 rounded-2xl overflow-hidden border border-[#e11584]/30 group shadow-2xl shadow-[#e11584]/10">
+    <div className="relative w-full h-full min-h-[250px] bg-white/50 rounded-2xl overflow-hidden border border-[#e11584]/30 group shadow-2xl shadow-[#e11584]/10">
       <img 
         src={imageUrl} 
         alt="Generated Result" 
