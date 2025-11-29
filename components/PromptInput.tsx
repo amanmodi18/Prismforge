@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Eraser, Sparkles, Zap, Pencil, Palette, Grid3x3, Box, Monitor, Flower, Aperture } from 'lucide-react';
+import { Eraser, Sparkles, Zap, Pencil, Palette, Grid3x3, Box, Monitor, Flower, Aperture, Maximize } from 'lucide-react';
 import { PresetPrompt, AspectRatio } from '../types';
 
 interface PromptInputProps {
@@ -37,6 +37,7 @@ export const PromptInput: React.FC<PromptInputProps> = ({
   };
 
   const presets = [
+    { label: 'Expand / Fill', icon: Maximize, value: PresetPrompt.EXPAND },
     { label: 'Remove BG', icon: Eraser, value: PresetPrompt.REMOVE_BG },
     { label: 'Blue Screen', icon: Monitor, value: PresetPrompt.BLUE_SCREEN },
     { label: 'Green Screen', icon: Monitor, value: PresetPrompt.GREEN_SCREEN },

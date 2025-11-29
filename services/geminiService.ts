@@ -1,3 +1,4 @@
+
 import { GoogleGenAI } from "@google/genai";
 
 // Initialize the client with the API key from the environment
@@ -20,6 +21,10 @@ export const editImageWithGemini = async (
 ): Promise<string> => {
   try {
     const cleanBase64 = base64Image.replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, '');
+    
+    // Explicitly mentioning the aspect ratio in the prompt helps the model understand 
+    // it should generate/outpaint content to fill the frame if the source aspect ratio differs.
+    const augmentedPrompt = `${prompt} . Output aspect ratio: ${aspectRatio}.`;
 
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash-image', // Nano Banana model
@@ -32,7 +37,7 @@ export const editImageWithGemini = async (
             },
           },
           {
-            text: prompt,
+            text: augmentedPrompt,
           },
         ],
       },

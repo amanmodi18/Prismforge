@@ -23,6 +23,7 @@ export enum PresetPrompt {
   REMOVE_BG = "Remove the background from the image perfectly, leaving only the main subject. Keep high details.",
   BLUE_SCREEN = "Replace the entire background behind the main subject with a solid pure blue color (chroma key blue).",
   GREEN_SCREEN = "Replace the entire background behind the main subject with a solid pure green color (chroma key green).",
+  EXPAND = "Keep the original subject and composition but expand the field of view to fill the entire image. Generate new, matching surroundings to fit the new aspect ratio seamlessly.",
   ENHANCE = "Significantly improve the image resolution, detail, and sharpness. Remove noise and blur while keeping the original composition and colors natural.",
   RETRO_FILTER = "Apply a vintage 1980s retro filter to the image with grain and color shift.",
   STUDIO_GHIBLI = "Transform this image into the style of a Studio Ghibli anime movie, with lush backgrounds, vibrant natural colors, and characteristic character designs.",
