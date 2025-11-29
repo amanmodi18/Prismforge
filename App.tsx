@@ -103,7 +103,7 @@ const App: React.FC = () => {
              Reimagine your images
            </h2>
            <p className="text-[#2b6f77] text-lg opacity-80">
-             Upload an image and describe how you want to change it. Whether it's removing backgrounds or applying creative filters, <span className="text-[#e11584] font-semibold">Gemini 2.5</span> handles it instantly.
+             Upload an image and describe how you want to change it. Whether it's removing backgrounds or applying creative filters, <span className="text-[#e11584] font-semibold">Prismforge</span> handles it instantly.
            </p>
         </section>
 

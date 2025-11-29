@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
           </div>
         </div>
         <div className="flex items-center gap-2">
-           <span className="px-3 py-1 rounded-full bg-white/60 border border-[#2b6f77]/20 text-xs font-mono text-[#2b6f77] flex items-center gap-2">
+           <span className="px-3 py-1 rounded-full bg-white/60 border border-[#2b6f77]/20 text-xs font-medium text-[#2b6f77] flex items-center gap-2">
              <Wand2 className="w-3 h-3 text-[#e11584]" />
              AI Enhanced
            </span>
